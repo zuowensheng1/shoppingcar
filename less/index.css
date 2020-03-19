@@ -1,0 +1,218 @@
+.hide {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body,
+html {
+  background: #eee;
+}
+.goodsBox {
+  width: 1000px;
+  margin: auto;
+}
+.goodsBox .tabBox {
+  position: fixed;
+  height: 50px;
+  width: 1000px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #eee;
+  z-index: 100;
+}
+.goodsBox .tabBox ul {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.goodsBox .tabBox ul li {
+  flex: 1;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.goodsBox .tabBox ul li.current {
+  background-color: #3420f0;
+  color: #fff;
+}
+.goodsBox .goodsList {
+  width: 1000px;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+.goodsBox .goodsList ul li {
+  position: relative;
+  float: left;
+  margin: 10px;
+  width: 230px;
+  height: 272px;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 1px 5px 11px 5px #ccc;
+}
+.goodsBox .goodsList ul li .imgBox {
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+}
+.goodsBox .goodsList ul li .imgBox img {
+  width: 100%;
+}
+.goodsBox .goodsList ul li .til {
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+}
+.goodsBox .goodsList ul li .btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 15px;
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #eee;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.goodsBox .goodsList ul li .btn:hover {
+  background-color: aquamarine;
+  color: #fff;
+  border-color: aquamarine;
+}
+.cartIconBox {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #16bfe9;
+  bottom: 40px;
+  right: 20px;
+}
+.cartIconBox .icon-ziyuan {
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+.cartIconBox .numBox {
+  position: relative;
+  background-color: #ffdb7f;
+  color: #FFF;
+  left: -8px;
+  top: -15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.cartListBox {
+  width: 1000px;
+  margin: auto;
+}
+.cartListBox .til {
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+.cartListBox .back {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  right: 60px;
+  background: #ffdb7f;
+  color: #fff;
+  cursor: pointer;
+}
+.cartListBox .back:hover {
+  font-size: 25px;
+}
+.cartListBox .goodsListBox {
+  margin: 10px auto 60px;
+}
+.cartListBox .goodsListBox li {
+  display: flex;
+  height: 150px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fff;
+}
+.cartListBox .goodsListBox li .checkBox {
+  width: 50px;
+  text-align: center;
+  line-height: 120px;
+}
+.cartListBox .goodsListBox li .imgBox {
+  width: 150px;
+  height: 120px;
+  overflow: hidden;
+}
+.cartListBox .goodsListBox li .imgBox img {
+  height: 100%;
+  position: relative;
+  left: -20px;
+}
+.cartListBox .goodsListBox li .contentBox {
+  flex: 1;
+  padding: 15px;
+  position: relative;
+  height: 90px;
+}
+.cartListBox .goodsListBox li .contentBox .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.cartListBox .goodsListBox li .contentBox .desc {
+  font-size: 18px;
+  color: #bbb;
+}
+.cartListBox .goodsListBox li .contentBox .priceCountBox {
+  position: absolute;
+  bottom: 5;
+}
+.cartListBox .goodsListBox li .contentBox .priceCountBox span {
+  margin-right: 20px;
+  color: red;
+}
+.cartListBox .goodsListBox li .contentBox .priceCountBox input {
+  width: 80px;
+}
+.cartListBox .goodsListBox li .delBtn {
+  position: absolute;
+  width: 60px;
+  right: 50px;
+}
+.cartListBox .totalBox {
+  display: flex;
+  position: fixed;
+  width: 1000px;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+  height: 50px;
+  align-items: center;
+}
+.cartListBox .totalBox .allCheckBox {
+  width: 150px;
+}
